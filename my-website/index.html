@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Dreamline Bus Transportation. Travel safely and comfortably across Kenya.">
+
+    <title>Dreamline Bus Transportation | Travel in Comfort</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                DREAM<span>LINE</span>
+                <small>BUS TRANSPORTATION</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#routes">Our Routes</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking" class="nav-button">Book Now</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content container">
+
+            <p class="eyebrow">WELCOME TO DREAMLINE</p>
+
+            <h1>
+                Your Journey.<br>
+                Our <span>Priority.</span>
+            </h1>
+
+            <p class="hero-description">
+                Experience comfortable, reliable and convenient
+                bus transportation across Kenya.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-red">
+                    Book Your Journey
+                </a>
+
+                <a href="#routes" class="btn btn-outline">
+                    Explore Routes
+                </a>
+            </div>
+
+            <div class="hero-features">
+                <span>✓ Comfortable Travel</span>
+                <span>✓ Reliable Service</span>
+                <span>✓ Customer Care</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section" id="booking">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">PLAN YOUR JOURNEY</p>
+                <h2>Where Would You Like To Go?</h2>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <select id="from" required>
+                        <option value="">Select departure</option>
+                        <option>Nairobi</option>
+                        <option>Nakuru</option>
+                        <option>Eldoret</option>
+                        <option>Kisumu</option>
+                        <option>Nyeri</option>
+                        <option>Mombasa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="to">Destination</label>
+                    <select id="to" required>
+                        <option value="">Select destination</option>
+                        <option>Nairobi</option>
+                        <option>Nakuru</option>
+                        <option>Eldoret</option>
+                        <option>Kisumu</option>
+                        <option>Nyeri</option>
+                        <option>Mombasa</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="travelDate">Travel Date</label>
+                    <input type="date" id="travelDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers" required>
+                        <option value="1">1 Passenger</option>
+                        <option value="2">2 Passengers</option>
+                        <option value="3">3 Passengers</option>
+                        <option value="4">4 Passengers</option>
+                        <option value="5">5 Passengers</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-red search-button">
+                    Check Journey
+                </button>
+
+            </form>
+
+            <div id="bookingResult" class="booking-result"
+                 role="status" aria-live="polite"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about section-padding" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <div class="image-overlay">
+                    <span>TRAVEL WITH CONFIDENCE</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">ABOUT DREAMLINE</p>
+
+                <h2>More Than Just A Journey</h2>
+
+                <p>
+                    At Dreamline, we believe every journey should
+                    be comfortable, convenient and memorable.
+                </p>
+
+                <p>
+                    Our goal is to provide dependable intercity
+                    transportation connecting travellers to
+                    destinations across Kenya.
+                </p>
+
+                <div class="about-points">
+                    <div>✓ Customer-focused service</div>
+                    <div>✓ Comfortable travel experience</div>
+                    <div>✓ Convenient journey planning</div>
+                </div>
+
+                <a href="#contact" class="btn btn-red">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROUTES SECTION -->
+    <section class="routes section-padding" id="routes">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE KENYA</p>
+                <h2>Popular Travel Destinations</h2>
+                <p>Discover destinations for your next journey.</p>
+            </div>
+
+            <div class="route-grid">
+
+                <article class="route-card">
+                    <div class="route-number">01</div>
+                    <h3>Nairobi – Nakuru</h3>
+                    <p>Connect the capital to the heart of the Rift Valley.</p>
+                    <a href="#booking">Plan this journey →</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-number">02</div>
+                    <h3>Nairobi – Eldoret</h3>
+                    <p>Travel towards Kenya's beautiful western region.</p>
+                    <a href="#booking">Plan this journey →</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-number">03</div>
+                    <h3>Nairobi – Kisumu</h3>
+                    <p>Enjoy a journey towards the shores of Lake Victoria.</p>
+                    <a href="#booking">Plan this journey →</a>
+                </article>
+
+                <article class="route-card">
+                    <div class="route-number">04</div>
+                    <h3>Nairobi – Mombasa</h3>
+                    <p>Plan your next trip to Kenya's coastal city.</p>
+                    <a href="#booking">Plan this journey →</a>
+                </article>
+
+            </div>
+
+            <p class="disclaimer">
+                These are illustrative route examples. Confirm
+                Dreamline's actual operating routes before publishing.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FLEET SECTION -->
+    <section class="fleet section-padding" id="fleet">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">OUR TRANSPORT SERVICES</p>
+                <h2>Travel In Comfort</h2>
+                <p>Explore the transportation experience Dreamline aims to provide.</p>
+            </div>
+
+            <div class="fleet-grid">
+
+                <div class="fleet-card">
+                    <div class="fleet-visual coach">🚌</div>
+                    <div class="fleet-info">
+                        <h3>Intercity Coaches</h3>
+                        <p>Convenient transportation between destinations.</p>
+                    </div>
+                </div>
+
+                <div class="fleet-card">
+                    <div class="fleet-visual comfort">🚍</div>
+                    <div class="fleet-info">
+                        <h3>Comfortable Travel</h3>
+                        <p>A welcoming experience for your journeys.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="disclaimer">
+                Replace these illustrations with photographs of
+                Dreamline's actual buses when available.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+
+        <div class="container cta-content">
+            <p class="eyebrow">YOUR NEXT JOURNEY STARTS HERE</p>
+            <h2>Ready To Travel With Dreamline?</h2>
+            <p>Let us help you plan your next trip across Kenya.</p>
+            <a href="#booking" class="btn btn-light">Plan Your Journey</a>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section-padding" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Contact Dreamline</h2>
+                <p>We would love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <span>☎</span>
+                    <h3>Phone</h3>
+                    <p>Add your official company phone number.</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>✉</span>
+                    <h3>Email</h3>
+                    <p>Add your official company email address.</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>📍</span>
+                    <h3>Location</h3>
+                    <p>Add your official booking office location.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                DREAM<span>LINE</span>
+                <small>BUS TRANSPORTATION</small>
+            </a>
+
+            <p>© <span id="year"></span> Dreamline Bus Transportation.</p>
+
+            <p>Travel in comfort. Arrive with confidence.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
